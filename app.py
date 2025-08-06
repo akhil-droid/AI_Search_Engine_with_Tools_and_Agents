@@ -6,6 +6,11 @@ from langchain.agents import initialize_agent,AgentType
 from langchain.callbacks import StreamlitCallbackHandler
 import os
 from dotenv import load_dotenv
+load_dotenv()
+
+os.environ["LANGSMITH_API_KEY"]= os.getenv("LANGSMITH_API_KEY")
+os.environ["LANGSMITH_PROJECT"]= os.getenv("LANGSMITH_PROJECT")
+os.environ["LANGSMITH_TRACING"]= os.getenv("LANGSMITH_TRACING")
 
 ## Arxiv and wikipedia Tools
 arxiv_wrapper=ArxivAPIWrapper(top_k_results=1, doc_content_chars_max=200)
