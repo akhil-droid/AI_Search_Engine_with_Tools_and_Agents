@@ -42,14 +42,12 @@ pip install -r requirements.txt
 
 ### 3️⃣ Configure Environment Variables
 Copy .env.sample to .env
-Add any required API keys or configuration values.
 
 ### ▶️ Usage
-Run Locally
 streamlit run app.py
 
 
-📝 Example Queries
+### 📝 Example Queries
 "Find the latest research papers on quantum computing."
 
 "What is LangChain and how does it work?"
